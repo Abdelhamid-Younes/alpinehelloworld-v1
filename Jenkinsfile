@@ -1,9 +1,9 @@
 pipeline {
      environment {
-       ID_DOCKER = "${ID_DOCKER_PARAMS}"
+       ID_DOCKER = younesabdh
        IMAGE_NAME = "alpinehelloworld"
        IMAGE_TAG = "latest"
-//       PORT_EXPOSED = "80" à paraméter dans le job
+       PORT_EXPOSED = "80"
        STAGING = "${ID_DOCKER}-staging"
        PRODUCTION = "${ID_DOCKER}-production"
      }
