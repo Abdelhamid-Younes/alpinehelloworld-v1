@@ -17,6 +17,7 @@ pipeline {
         CONTAINER_IMAGE = "${DOCKERHUB_ID}/${IMAGE_NAME}:${IMAGE_TAG}"
     }
 
+
     parameters {
         // booleanParam(name: "RELEASE", defaultValue: false)
         // choice(name: "DEPLOY_TO", choices: ["", "INT", "PRE", "PROD"])
