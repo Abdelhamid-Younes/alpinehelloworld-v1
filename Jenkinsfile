@@ -8,10 +8,10 @@ pipeline {
         PRODUCTION = "younesabdh-prod"
         DOCKERHUB_ID = "younesabdh"
         DOCKERHUB_PASSWORD = credentials('dockerhub')
-        STG_API_ENDPOINT = "ip10-0-2-5-cphii2sc80hg00cit1t0-1993.direct.docker.labs.eazytraining.fr"        /* Mettre le couple IP:PORT de votre API eazylabs, exemple 100.25.147.76:1993 */
-        STG_APP_ENDPOINT = "ip10-0-2-5-cphii2sc80hg00cit1t0-80.direct.docker.labs.eazytraining.fr"        /* Mettre le couple IP:PORT votre application en staging, exemple 100.25.147.76:8000 */
-        PROD_API_ENDPOINT = "ip10-0-2-6-cphii2sc80hg00cit1t0-1993.direct.docker.labs.eazytraining.fr"      /* Mettre le couple IP:PORT de votre API eazylabs, 100.25.147.76:1993 */
-        PROD_APP_ENDPOINT = "ip10-0-2-6-cphii2sc80hg00cit1t0-80.direct.docker.labs.eazytraining.fr"      /* Mettre le couple IP:PORT votre application en production, exemple 100.25.147.76 */
+        STG_API_ENDPOINT = "ip10-0-4-4-cpi9edbj2epg008vt4m0-1993.direct.docker.labs.eazytraining.fr"        /* Mettre le couple IP:PORT de votre API eazylabs, exemple 100.25.147.76:1993 */
+        STG_APP_ENDPOINT = "ip10-0-4-4-cpi9edbj2epg008vt4m0-80.direct.docker.labs.eazytraining.fr"        /* Mettre le couple IP:PORT votre application en staging, exemple 100.25.147.76:8000 */
+        PROD_API_ENDPOINT = "ip10-0-4-5-cpi9edbj2epg008vt4m0-1993.direct.docker.labs.eazytraining.fr"      /* Mettre le couple IP:PORT de votre API eazylabs, 100.25.147.76:1993 */
+        PROD_APP_ENDPOINT = "ip10-0-4-5-cpi9edbj2epg008vt4m0-80.direct.docker.labs.eazytraining.fr"      /* Mettre le couple IP:PORT votre application en production, exemple 100.25.147.76 */
         INTERNAL_PORT = "5000"              /*5000 par défaut*/
         EXTERNAL_PORT = "${PARAM_PORT_EXPOSED}"
         CONTAINER_IMAGE = "${DOCKERHUB_ID}/${IMAGE_NAME}:${IMAGE_TAG}"
